@@ -373,6 +373,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 	/*margin-bottom: 10%;*/
 	margin-left: 5%;
 	margin-right: 5%;
+	padding: 1%;
 }
 .IndexGlavPole {
 	display: flex;
@@ -420,4 +421,15 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 {
 	margin-bottom: 4%;
 	margin-top: 1%;
+}
+.abz {
+	font-size:15pt;
+	text-indent: 1.5em;
+	margin-bottom: 1%;
+}
+.Video1 {
+	height: 20%; 
+	width: 25%;
+	float: right;
+	margin-bottom: 2%;
 }

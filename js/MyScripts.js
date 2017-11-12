@@ -3,7 +3,7 @@
 		function SlideSprav(col)
 		{"use strict";
 		 	for (var k=0; k<=col; k++) {
-  			if (k===i) {document.getElementById(String(k)).style.display="block";}
+  			if (k===i) {document.getElementById(String(k)).style.display="inline-block";}
 				else {document.getElementById(String(k)).style.display="none";}
 			}
 		}	

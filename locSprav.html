@@ -10,28 +10,211 @@
 <body background="img/fon1.png">
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
-  <a href="#" onClick="PrevSprav(2,'loc.html')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
+  <a href="#" onClick="PrevSprav(1,'loc.html')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
   <a href="loc.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-bars"></i></a>
   <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
-  <a href="#" onClick="NextSprav(2,'#')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
+  <a href="#" onClick="NextSprav(1,'#')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
 </div>
 </div>
 <div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2 class="zagol2">Географическое положение РК</h2></div>
-<div class="YrokGlavPole" id="0" style="display:block">
-	<p class="abz"> <img src="img/FizMap.png" width="15%" height="20%" align="left" alt="Физическая карта РК" style="cursor:zoom-in"
-  onclick="document.getElementById('AdmMapFULL').style.display='block'"/>Республика Коми расположена на северо-востоке европейской части Российской Федерации в пределах территории , охватывающей Печорскую низменность и Мезенско-Вычегодскую равнину, Средний и Южный Тиман, западные склоны Уральских гор в границах Северного, Приполярного и Полярного Урала.Республика простирается от Северных Увалов на юге до Пай-Хоя на северо-востоке. От Пинего-Мезенского междуречья на западе до водораздела рек Печоры и Оби, проходящего по Уральскому хребту на востоке.</p>
- 	<p class="abz">Площадь Коми Республики - 416,8 тыс. кв. км.(2,4% площади России). Территория Республики имеет наибольшую протяженность с юго-запада на северо-восток - 1275 км, с севера на юг - 785 км, с запада на восток - 685 км. Граничит на Севере и Западе с Архангельской областью и входящим в нее Ненецким автономным округом, на Юго-Западе – с Кировской областью, на Востоке – с Ямало-Ненецким и Ханты-Мансийским автономными округами Тюменской области, на Юго-Востоке – со Свердловской областью, на Юге – с Пермской областью и входящим в нее Коми-Пермяцким автономным округом.</p>
+<div class="YrokGlavPole" id="0" style="display:inline-block">
+	<div><img src="img/FizMap.png" width="15%" height="20%" align="left" alt="Физическая карта РК" style="cursor:zoom-in"
+		onclick="document.getElementById('FizMapFULL').style.display='block'"/></div>
+	<p class="abz"> 
+  	Республика Коми расположена на северо-востоке европейской части Российской Федерации в пределах территории , охватывающей Печорскую низменность и Мезенско-Вычегодскую равнину, Средний и Южный Тиман, западные склоны Уральских гор в границах Северного, Приполярного и Полярного Урала.Республика простирается от Северных Увалов на юге до Пай-Хоя на северо-востоке. От Пинего-Мезенского междуречья на западе до водораздела рек Печоры и Оби, проходящего по Уральскому хребту на востоке.</p>
+  	<div><video class="Video1" controls width="100%" height="100%">
+		<source src="video/PrezRK.mp4">
+		</video>
+	</div>
+  	<p class="abz">
+  	Площадь Коми Республики - 416,8 тыс. кв. км.(2,4% площади России). Территория Республики имеет наибольшую 		протяженность с юго-запада на северо-восток - 1275 км, с севера на юг - 785 км, с запада на восток - 685 км. Граничит на Севере и Западе с Архангельской областью и входящим в нее Ненецким автономным округом, на Юго-Западе – с Кировской областью, на Востоке – с Ямало-Ненецким и Ханты-Мансийским автономными округами Тюменской области, на Юго-Востоке – со Свердловской областью, на Юге – с Пермским краем.
+	</p>
+	<div id="FizMapFULL" class="w3-modal" onclick="this.style.display='none'">
+		<div class="w3-modal-content w3-animate-zoom">
+			<img src="img/FizMap.png" width="100%" height="100%"/>
+		</div>
+	</div>
 </div>
 <div class="YrokGlavPole" id="1" style="display:none">
-111111
-</div>
-<div class="YrokGlavPole" id="2" style="display:none">
-222222
-</div>
-<div id="AdmMapFULL" class="w3-modal" onclick="this.style.display='none'">
-	<div class="w3-modal-content w3-animate-zoom">
-		<img src="img/FizMap.png" width="100%" height="100%"/>
+	<div><img src="img/AdmMap.png" width="15%" height="20%" align="left" alt="Физическая карта РК" style="cursor:zoom-in"
+		onclick="document.getElementById('AdmMapFULL').style.display='block'"/></div>
+	<p class="abz"> 
+  	В административном отношении Республика Коми делится на 20 административно-территориальныч единиц: 8 городов республиканского значения с подчинёнными им территориями (Сыктывкар, Воркута, Вуктыл, Инта, Печора, Сосногорск, Усинск, Ухта) и 12 районов (Ижемский, Княжпогостский, Койгородский, Корткеросский, Прилузский, Сыктывдинский, Сысольский, Троицко-Печорский, Удорский, Усть-Вымский, Усть-Куломский, Усть-Цилемский). На 1 января 2017 года в Республике Коми насчитывалось 184 муниципальных образований — 6 городских округов, 14 муниципальных районов, 14 городских поселений и 151 сельское поселение. Численность жителей на 2017 г. составила 850,5 тыс. человек, в том числе: городское население - 663,4 тыс человек, сельское - 187,1 тыс человек. Государственные языки - коми и русский. Столицей является город Сыктывкар (256 тыс. чел.)</p>
+  	<div id="AdmMapFULL" class="w3-modal" onclick="this.style.display='none'">
+		<div class="w3-modal-content w3-animate-zoom">
+			<img src="img/AdmMap.png" width="100%" height="100%"/>
+		</div>
 	</div>
+  	<table align="center" border="1" bordercolor="rgba(0,0,0,1.00)" bgcolor="rgba(255,251,251,1.00)">
+    <tr>
+        <td>№</td>
+        <td>Города и районы</td>
+        <td>Площадь, тыс. кв. км.</td>
+        <td>Население, чел.</td>
+        <td>Административный центр</td>
+        <td>Население, чел.</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Сыктывкар</td>
+        <td>0.7</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">256 077</span><br></td>
+        <td>г. Сыктывкар</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">244646</span><br></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Воркутинский</td>
+        <td>24.4</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">88 026</span></td>
+        <td>г. Воркута</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center;">58133</span></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Вутыльский</td>
+        <td>22.5</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">13 790</span></td>
+        <td>г. Вуктыл</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">10205</span><br></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Интинский</td>
+        <td>30.1</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">32 340</span></td>
+        <td>г. Инта</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">26271</span></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Печорский</td>
+        <td>28.9</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">55 187</span></td>
+        <td>г. Печора</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">40048</span></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Сосногоский</td>
+        <td>19.4</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">45 681</span></td>
+        <td>г. Сосногорск</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">26571</span></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Усинский</td>
+        <td>30.6</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">46 096</span></td>
+        <td>г. Усинск</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">38800</span></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Ухтинский</td>
+        <td>10.3</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">121 253</span></td>
+        <td>г. Ухта</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">97806</span></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Ижемский</td>
+        <td>18.4</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">17 929</span></td>
+        <td>с. Ижма</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">3753</span></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Княжпогостский</td>
+        <td>24.6</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">21 854</span></td>
+        <td>г. Емва</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; b">12906</span></td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Койгородский</td>
+        <td>10.4</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">8 124</span></td>
+        <td>с. Койгородок</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">2877</span></td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Корткеросский</td>
+        <td>19.7</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">19 202</span></td>
+        <td>с. Корткерос</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">4 838</span></td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>Прилузский</td>
+        <td>13.2</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">19 451</span></td>
+        <td>с. Объячево</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">5 699</span></td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>Сыктывдинский</td>
+        <td>7.4</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">23 445</span></td>
+        <td>с. Выльгорт</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">11946</span></td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>Сысольский</td>
+        <td>6.2</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">13 576</span></td>
+        <td>с. Визинга</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">6 810</span></td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>Троицко-Печорский</td>
+        <td>40.7</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">12 945</span></td>
+        <td>пгт. Троицко-Печорск</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">6 315</span></td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>Удорский</td>
+        <td>35.8</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">19 479</span></td>
+        <td>с. Кослан</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">2 288</span></td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>Усть-Вымский</td>
+        <td>4.8</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">27 976</span></td>
+        <td>с. Фйкино</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">3 367</span></td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>Усть-Куломский</td>
+        <td>26.4</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; ">25 853</span></td>
+        <td>с. Усть-Кулом</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">5 141</span></td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>Усть-Цилемский</td>
+        <td>42.5</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px;">12 355</span></td>
+        <td>с. Усть-Цильма</td>
+        <td><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; text-align: -webkit-center; ">4 877</span></td>
+    </tr>
+</table>
 </div>
 </body>
 </html>
