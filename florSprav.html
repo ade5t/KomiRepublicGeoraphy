@@ -10,21 +10,115 @@
 <body background="img/fon1.png">
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
-  <a href="#" onClick="PrevSprav(2,'flor.html')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
+  <a href="#" onClick="PrevSprav(1,'flor.html')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
   <a href="flor.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-bars"></i></a>
   <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
-  <a href="#" onClick="NextSprav(2,'#')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
+  <a href="#" onClick="NextSprav(1,'#')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
 </div>
 </div>
 <div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2 class="zagol2">Растительный и животный мир</h2></div>
 <div class="YrokGlavPole" id="0" style="display:block">
-000000
+<div><img src="img/" class="w3-round" width="20%" height="25%" align="left" title="Карта растительности" style="cursor:zoom-in"
+		onclick="document.getElementById('RastMapFULL').style.display='block'"/></div>
+	<p class="abz"> 
+  	Растительный покров республики отличается большим своеборазием и разнообразием. В его распределении на равнинах хорошо прослеживаются зональные изменения, а в горах Урала - высотная поясность. Крайний северо-восток РК занимает тундра, южнее расположена узкая полоса лесотундры, сменяющаяся к югу обширными лесными пространствами. Характерная особенность тундры связана с отсутствием древесной растительности: растительный покров состоит из мхов, лишайников, многолетних травянистых растений, кустарников и кустарничков. Переходная полоса между типичной тундрой и тайгой занята лесотундровой растительностью. В этой зоне сосредоточены основные зиминие и весенне-осенние пастбища северных оленей.
+	</p>
+	<div><img src="img/les1.jpg" class="w3-round" width="20%" height="25%" align="right" title="Растительность" style="cursor:zoom-in"
+		onclick="document.getElementById('SlideMapFULL').style.display='block'"/></div>
+	<p class="abz"> 
+  	Видовой состав растительности республики определяют 8 видов хвойных и около 20 видов лиственных пород, отличающихся выносливостью и холодостойкостью. Основынми лесообразующими породами являются ель сибирская, сосна обыкновенная и береза. Из других пород выделяются пихта, лиственница, кедр. Лесопокрытая территория занимает 71% площади республики. Еловые и сосновые леса определябт региональный тип растительности северной и средней тайги, сосновые и осиновые с липой в подлеске преоблажают в южной тайге. Некоторые растения, произрастающие на территрори республики включены в красную книгу.
+	</p>
 </div>
 <div class="YrokGlavPole" id="1" style="display:none">
-111111
+	<p class="abz"> 
+  	Животный мир РК отличается большим разнообразием. Здесь представлены 58 видов млекопитающих, 247 видов птиц, 5 видов земноводных, 46 видоы птиц и свыше 3900 видов беспозвоночных животных. К редким и нуждающимся в охране видам, занесенным в Красную книгу Республики Коми (2009), относятся 37 видов птиц, 11 видов млекопитающих. Особое своеобразие животному миру придает смешение фауны тундры и тайги, наличие в его составе европейских и сибирских видов животных.
+  	Типичными представители животного мира тундры - северный олень, песец, заяц-беляк, белая куропатка и полярная сова. 
+	</p>
+	<div><img src="img/giv1.jpg" class="w3-round" width="20%" height="25%" align="left" title="Животный мир лесов" style="cursor:zoom-in"
+		onclick="document.getElementById('SlideMap1FULL').style.display='block'"/></div>
+	<p class="abz"> 
+  	В тайге насчитывается 54 вида зверей и 96 видов птиц. В хвойных лесах занимаются охотой на белку, куницу, медведя;  в мелколесье и долинах рек обитают лисица, волк, заяц-беляк, горностай, крот; вблизи водоемов - выдра, норка, ондатра и бобр. Среди птиц наиболее распространены представители отрядов Вооробьинообразыне, Ржанкообразные и Гусеобразыне. 
+	</p>
+	<div><img src="img/fish1.jpg" class="w3-round" width="20%" height="25%" align="right" title="Животный мир водоемов" style="cursor:zoom-in"
+		onclick="document.getElementById('SlideMap2FULL').style.display='block'"/></div>
+	<p class="abz"> 
+  	Водоемы республики богаты рыбой, представленной 36 видами. Фауна рыб бассейна реки Печора наиболее близка к сибирской, реки Вычегда - к понто-арало-каспийской. Наиболее ценными видами промысловых рыб являются семга, сиг, пелядь, ряпушка, омуль и хариус. Промысловое значение имеют такде карповые.
+	</p>
 </div>
-<div class="YrokGlavPole" id="2" style="display:none">
-222222
+
+<div id="RastMapFULL" class="w3-modal" onclick="this.style.display='none'">
+	<div class="w3-modal-content w3-animate-zoom">
+		<img src="img/" width="100%" height="100%"/>
+		<h3 align="center">Карта растительности</h3>
+	</div>
+</div>
+
+<div id="SlideMapFULL" class="w3-modal">
+	<div class="w3-content w3-display-container" style="max-width:60%">
+		<div class="w3-center w3-container w3-section w3-xxlarge w3-text-dark-grey w3-display-topmiddle" style="width:50%">
+			<div class="w3-centre w3-hover-text-black" onclick="document.getElementById('SlideMapFULL').style.display='none'" style="cursor:pointer">&#10006;</div>
+		</div>
+		<img class="mySlides 1" src="img/les1.jpg" style="width:100%; display:block" title="Смешанный лес">
+		<img class="mySlides 1" src="img/les2.jpg" style="width:100%; display:none" title="Еловый лес">
+		<img class="mySlides 1" src="img/les3.jpg" style="width:100%; display:none" title="Березняк">
+		<img class="mySlides 1" src="img/les4.jpg" style="width:100%; display:none" title="Травянистые виды растений">
+  		<img class="mySlides 1" src="img/les5.jpg" style="width:100%; display:none" title="Сосновый бор">
+	  	<div class="w3-center w3-container w3-section w3-xxlarge w3-text-dark-grey w3-display-bottommiddle" style="width:50%">
+			<div class="w3-left w3-hover-text-black" onclick="plusDivs(-1,1)" style="cursor:pointer">&#10094;</div>
+			<div class="w3-right w3-hover-text-black" onclick="plusDivs(1,1)" style="cursor:pointer">&#10095;</div>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1,1)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2,1)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3,1)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4,1)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(5,1)" style="cursor:pointer"></span>
+	  	</div>
+	</div>
+</div>
+
+<div id="SlideMap1FULL" class="w3-modal">
+	<div class="w3-content w3-display-container" style="max-width:60%">
+		<div class="w3-center w3-container w3-section w3-xxlarge w3-text-dark-grey w3-display-topmiddle" style="width:50%">
+			<div class="w3-centre w3-hover-text-black" onclick="document.getElementById('SlideMap1FULL').style.display='none'" style="cursor:pointer">&#10006;</div>
+		</div>
+		<img class="mySlides 2" src="img/giv1.jpg" style="width:100%; display:block" title="Бобр">
+		<img class="mySlides 2" src="img/giv2.jpg" style="width:100%; display:none" title="Заяц-беляк">
+		<img class="mySlides 2" src="img/giv3.jpg" style="width:100%; display:none" title="Лось">
+		<img class="mySlides 2" src="img/giv4.jpg" style="width:100%; display:none" title="Волк">
+  		<img class="mySlides 2" src="img/giv5.jpg" style="width:100%; display:none" title="Лиса">
+  		<img class="mySlides 2" src="img/giv6.jpg" style="width:100%; display:none" title="Тетерев на току">
+  		<img class="mySlides 2" src="img/giv7.jpg" style="width:100%; display:none" title="Утка">
+	  	<div class="w3-center w3-container w3-section w3-xxlarge w3-text-dark-grey w3-display-bottommiddle" style="width:50%">
+			<div class="w3-left w3-hover-text-black" onclick="plusDivs(-1,2)" style="cursor:pointer">&#10094;</div>
+			<div class="w3-right w3-hover-text-black" onclick="plusDivs(1,2)" style="cursor:pointer">&#10095;</div>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1,2)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2,2)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3,2)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4,2)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(5,2)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(6,2)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(7,2)" style="cursor:pointer"></span>
+	  	</div>
+	</div>
+</div>
+
+<div id="SlideMap2FULL" class="w3-modal">
+	<div class="w3-content w3-display-container" style="max-width:60%">
+		<div class="w3-center w3-container w3-section w3-xxlarge w3-text-dark-grey w3-display-topmiddle" style="width:50%">
+			<div class="w3-centre w3-hover-text-black" onclick="document.getElementById('SlideMap2FULL').style.display='none'" style="cursor:pointer">&#10006;</div>
+		</div>
+		<img class="mySlides 3" src="img/fish1.jpg" style="width:100%; display:block" title="Хариус">
+		<img class="mySlides 3" src="img/fish2.jpg" style="width:100%; display:none" title="Пелядь">
+		<img class="mySlides 3" src="img/fish3.jpg" style="width:100%; display:none" title="Сиг">
+		<img class="mySlides 3" src="img/fish4.jpg" style="width:100%; display:none" title="Семга">
+	  	<div class="w3-center w3-container w3-section w3-xxlarge w3-text-dark-grey w3-display-bottommiddle" style="width:50%">
+			<div class="w3-left w3-hover-text-black" onclick="plusDivs(-1,3)" style="cursor:pointer">&#10094;</div>
+			<div class="w3-right w3-hover-text-black" onclick="plusDivs(1,3)" style="cursor:pointer">&#10095;</div>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1,2)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2,3)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3,3)" style="cursor:pointer"></span>
+			<span class="w3-button demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4,3)" style="cursor:pointer"></span>
+	  	</div>
+	</div>
 </div>
 </body>
 </html>
