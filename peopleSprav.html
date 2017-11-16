@@ -10,21 +10,48 @@
 <body background="img/fon1.png">
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
-  <a href="#" onClick="PrevSprav(2,'people.html')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
+  <a href="#" onClick="PrevSprav(1,'people.html')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
   <a href="people.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-bars"></i></a>
   <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
-  <a href="#" onClick="NextSprav(2,'#')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
+  <a href="#" onClick="NextSprav(1,'#')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
 </div>
 </div>
 <div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2 class="zagol2">Население и основные народы Республики Коми</h2></div>
 <div class="YrokGlavPole" id="0" style="display:block">
-000000
+	<div><img src="img/PeopleMap.png" class="w3-round" width="20%" height="25%" align="right" title="Население" style="cursor:zoom-in"
+		onclick="document.getElementById('PeopleMapFULL').style.display='block'"/></div>
+	<p class="abz"> 
+  	Общая численность населения состовляет 850 544 чел. (2017). Плотность населения состовляет 2,04 чел/кв. км. Городское население - 78%. В национальном составе РК выделяется более 100 наций и народностей. На 2010 г. коми составляли 22,45% неселения республики, русские - 61,69%, украинцы - 4%, татары - 1,2%, белорусы - 0,98%, лица других национальностей - 9,68%. В 5 административных районах коми являются преобладающей национальностью: Усть-Куломский район (76,9%), Прилузский район (55,2%), Сысольский район (64,8%), Корткеросский район (68,4%), Ижемский район (88,9%). В городах и прочих районах преобладает русское неаселение.
+	</p>
+	<p class="abz"> 
+  	Республика Коми относится к числу слабозаселенных северных территорий. Наиболее плотно заселена полоса вдоль железножорожных магистралей, а также долины рек Вычегды, Сысолы, Выми и Лузы. Общая плотность населения наиболее высока на территориях, принадлежащих Сыктывкарскому (353,3 чел/кв. км.), Ухтинскому (9) городским округам, а также в Усть-Вымском (5,5) районе.
+	</p>
 </div>
 <div class="YrokGlavPole" id="1" style="display:none">
-111111
+	<div><video class="Video2 w3-round" controls width="100%" height="100%" title="Традиции и обычаи коми народа. Праздник Луд">
+		<source src="video/TradAndObich.mp4">
+		</video>
+	</div>
+	<p class="abz"> 
+  	Всего на 2016 г. по республике насчитывается 757 населенных пунктов. Городская сеть представлена 39 поселениями, из которых 10 городов и 29 поселков гордского типа. В них проживает 666,428 тыс. человек. Число сельских населенных пунктов составляет 718, в них проживает 187,126 тыс. человек.
+	</p>
+	<div><video class="Video1 w3-round" controls width="100%" height="100%" title="Наследие древнего народа Коми">
+		<source src="video/Nasledie.mp4">
+		</video>
+	</div>
+	<p class="abz"> 
+  	По данным на 2016 г. в республике наблюдалась негативная демографическая ситуация. За прошедший год численность населения сократилась на 6,3 тыс. человек. В основном, за счет миграционного оттока населения. Частично эти потери были восполнены за счет естественного прироста. Рождаемость на 1000 чел. составила 13,1, а смертность - 12,4. В целом уровень рождаемости по республике превышает уровень смертности. 
+	</p>
+	<p class="abz"> 
+  	Доля мужского населения РК составляет - 47,2%, доля женского - 52,8%. Удельный вес нетрудоспособного населения в возрасте до 15 лет составил 18,95% от всего населения. Трудоспособного населения (мужчины 16-59 лет, женщины 16-54 лет) - 59,2%, старше трудоспособного - 21,85%. 
+	</p>
 </div>
-<div class="YrokGlavPole" id="2" style="display:none">
-222222
+
+<div id="PeopleMapFULL" class="w3-modal" onclick="this.style.display='none'">
+	<div class="w3-modal-content w3-animate-zoom">
+		<img src="img/PeopleMap.png" width="100%" height="100%"/>
+		<h3 align="center">Население</h3>
+	</div>
 </div>
 </body>
 </html>
