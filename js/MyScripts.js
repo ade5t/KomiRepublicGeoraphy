@@ -1,27 +1,27 @@
 // JavaScript Document
 		var i=0;
-		function SlideSprav(col)
+		function SlideSprav(col,styl)
 		{"use strict";
 		 	for (var k=0; k<=col; k++) {
-  			if (k===i) {document.getElementById(String(k)).style.display="inline-block";}
+  			if (k===i) {document.getElementById(String(k)).style.display=String(styl);}
 				else {document.getElementById(String(k)).style.display="none";}
 			}
 		}	
 		
-		function PrevSprav(col,link)
+		function PrevSprav(col,link,styl)
 		{"use strict";
 			if (i>0)
 			{--i;
-			 SlideSprav(col);
+			 SlideSprav(col,styl);
 			}
 		 else {location.href=link;}
 		}
 		
-		function NextSprav(col,link)
+		function NextSprav(col,link,styl)
 		{"use strict";
 		 if (i<col)
 			{++i;
-			 SlideSprav(col);
+			 SlideSprav(col,styl);
 			}
 		 else {location.href=link;}
 		}
