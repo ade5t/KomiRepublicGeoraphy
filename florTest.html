@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Тестирование</title>
+<script src="js/MyScripts.js"></script>
+<link href="css/w3.css" rel="stylesheet" type="text/css" media="screen">
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body background="img/fon1.png">
+<div class="w3-dark-grey w3-border navigate">
+ <div align="center" class="w3-dark-grey w3-border navigate2">
+  <a href="#" onClick="PrevSprav(0,'florPrac.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
+  <a href="flor.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
+  <a href="#" onClick="NextSprav(0,'florHome.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
+</div>
+</div>
+<div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2 class="zagol2">Растительный и животный мир. Почвы</h2></div>
+<div  align="center" class="YrokGlavPole" id="0" style="display:block">
+	<form class="w3-container abz">
+	<p>Ценная рыба, заплыающая на нерест в Печору и Мезень из СЛО:<br>
+		<label><input class="w3-radio" type="radio" name="a1" value="1">сиг</label>
+		<label><input class="w3-radio" type="radio" name="a1" value="2">семга</label>
+		<label><input class="w3-radio" type="radio" name="a1" value="3">пелядь</label>
+	</p>
+	<label for="b1">Почвы тундры:</label><br>
+	<select name="b1" id="select1">
+		<option value="0"></option>
+		<option value="1">тундровые глеевые, подзолистые, аллювиальные</option>
+		<option value="2">тундровые глеевые, болтные глеевые</option>
+		<option value="3">подзолистые, дерново-подзолистые</option>
+	</select><br>
+  	<label for="b2">Птицы тайги:</label><br>
+	<select name="b2" id="select2">
+		<option value="0"></option>
+		<option value="1">полярная сова, белая куропатка, кулики</option>
+		<option value="2">глухарь, рябчик, тетерев</option>
+		<option value="3">белая куропатка, мухоловка, кукшка</option>
+	</select>
+	<p>Растительность южной подзоны тайги:<br>
+		<label><input class="w3-radio" type="radio" name="a2" value="1">ель, сосна, береза</label>
+		<label><input class="w3-radio" type="radio" name="a2" value="2">ель, липа, осина</label>
+		<label><input class="w3-radio" type="radio" name="a2" value="3">карликовая береза, ель, осина</label>
+	</p>
+	<label for="b3">Животные тундры:</label><br>
+	<select name="b3" id="select3">
+		<option value="0"></option>
+		<option value="1">заяц-русак, лесная куница, рысь</option>
+		<option value="2">лемминг, белая куропатка, заяц-беляк</option>
+		<option value="3">горностай, северный олень, ласка</option>
+	</select>
+	<p>
+		<input type="button" class="w3-button w3-mobile w3-green w3-round" id="calc" value="Проверить">
+		<input type="reset" class="w3-button w3-mobile w3-green w3-round" value="Сброс">
+	</p>	
+	</form>
+</div>
+
+<div id="Otv" class="w3-modal" onclick="this.style.display='none'">
+	<div style="background-color:rgba(173,196,231,1.00)" class="w3-modal-content w3-animate-zoom">
+		<header class="w3-container w3-green"> 
+			<span onclick="document.getElementById('Otv').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+			<h2>Результаты тестирования</h2>
+      	</header>
+		<div class="w3-container">
+			<p>Правильных ответов: <input type="text" id="result1" name="result1" readonly></p>
+			<p>Процент правильных ответов: <input type="text" name="result2" id="result2" readonly></p>
+			<p>Оценка: <input type="text" name="result2" id="result3" readonly></p>
+      </div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	calc.onclick = function(){
+		var myform = this.form,
+		c1 = myform['b1'],
+		c2 = myform['b2'],
+		sum = 0;
+		
+		if(myform.a1.value == '2') sum++;
+		if(myform.b1.value == '2') sum++;
+		if(myform.b2.value == '2') sum++;
+		if(myform.a2.value == '2') sum++;
+		if(myform.b3.value == '2') sum++;
+
+		document.getElementById('result1').value = sum;
+		document.getElementById('result2').value = (sum/5)*100+'%';
+		if (sum<=2) document.getElementById('result3').value = 2;
+		if (sum>2) document.getElementById('result3').value = sum;
+		document.getElementById('Otv').style.display='block';
+	}; 
+</script>	
+</body>
+</html>

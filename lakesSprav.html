@@ -10,13 +10,13 @@
 <body background="img/fon1.png">
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
-  <a href="#" onClick="PrevSprav(1,'lakes.html')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
+  <a href="#" onClick="PrevSprav(2,'lakes.html','inline-block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
   <a href="lakes.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-bars"></i></a>
   <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
-  <a href="#" onClick="NextSprav(1,'#')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
+  <a href="#" onClick="NextSprav(2,'lakesZad.html','inline-block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
 </div>
 </div>
-<div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2 class="zagol2">Внутренние воды Республики Коми</h2></div>
+<div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2 class="zagol2">Внутренние воды Республики Коми. Климат</h2></div>
 <div class="YrokGlavPole" id="0" style="display:block">
 	<div><img src="img/pechora.jpg" class="w3-round" width="20%" height="25%" align="left" title="Река Печора" style="cursor:zoom-in"
 		onclick="document.getElementById('PechoraMapFULL').style.display='block'"/></div>
@@ -43,10 +43,20 @@
   	Большую площадь занимают болота. На севере и в центре республики преобладают верховые болота, в бассейне Средней Печоры – на первых надпойменных террасах – переходные болота. К поймам рек приурочены низинные болота. В республике имеются запасы подземных вод. По характеру их залегания различают: грунтовые воды – первый водоносный подземный горизонт, а также более глубокие межпластовые и артезианские. Наиболее крупные артезианские бассейны – Печорский и Усинский. На поверхность земли изливаются многочисленные минеральные источники в бассейнах Мезени, сысолы и Печоры. Многие из них целебны. За полярным кругом на Печрской равнине и в горах Урала в почвогрунтах и торфяниках развивается многолетняя мерзлота.
 	</p>
 </div>
+
 <div class="YrokGlavPole" id="2" style="display:none">
-222222
+	<div><img src="img/KlimatMap.png" class="w3-round" width="20%" height="25%" align="left" title="Климатическая карта" style="cursor:zoom-in" onclick="document.getElementById('KlimatMapFULL').style.display='block'"/></div>
+	<p class="abz"> 
+	Размеры и континентальная протяженность территории Республики Коми, влияние Северного Ледовитого и Атлантического океанов, природного барьера Уральских гор на востоке создают неоднородность климата с юго-запада на северо-восток. Здесь характерно частое вторжение холодных арктических, относительно теплых атлантических и воздушных масс умеренных широт. Это вызывает повышенную циркуляцию атмосферы, доминирование циклонической погоды, резкие перепады давления и температуры воздуха, быструю смену направления и скорости ветров, обилие осадков в виде дождя и снега. Расположение в субарктическом (на крайнем севере и северо-востоке) и умеренном (на большей части территории) климатических поясах обуславливает климат с продолжительной, довольно суровой зимой и коротким, сравнительно прохладным летом. Среднегодовая температура воздуха на большей части территории имеет отрицательные значения, понижаясь с юга на северо-восток от +1 до -6,3 градусов. Среднегодовое количество осадков - 625 мм, из которых 60-70 процентов приходится на теплый период времени.
+	</p>
 </div>
 
+<div id="KlimatMapFULL" class="w3-modal" onclick="this.style.display='none'">
+	<div class="w3-modal-content w3-animate-zoom">
+		<img src="img/KlimatMap.png" width="100%" height="100%"/>
+		<h3 align="center">Климатическая карта</h3>
+	</div>
+</div>
 <div id="PechoraMapFULL" class="w3-modal" onclick="this.style.display='none'">
 	<div class="w3-modal-content w3-animate-zoom">
 		<img src="img/pechora.jpg" width="100%" height="100%"/>

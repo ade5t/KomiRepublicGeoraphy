@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Тестирование</title>
+<script src="js/MyScripts.js"></script>
+<link href="css/w3.css" rel="stylesheet" type="text/css" media="screen">
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body background="img/fon1.png">
+<div class="w3-dark-grey w3-border navigate">
+ <div align="center" class="w3-dark-grey w3-border navigate2">
+  <a href="#" onClick="PrevSprav(0,'LocPrac.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
+  <a href="loc.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
+  <a href="#" onClick="NextSprav(0,'locHome.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
+</div>
+</div>
+<div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2 class="zagol2">Географическое положение РК</h2></div>
+<div  align="center" class="YrokGlavPole" id="0" style="display:block">
+	<form class="w3-container abz">
+	<p>Площадь Республики Коми составляет:<br>
+		<label><input class="w3-radio" type="radio" name="a1" value="1">100 тыс.км2</label>
+		<label><input class="w3-radio" type="radio" name="a1" value="2">200 тыс. км2</label>
+		<label><input class="w3-radio" type="radio" name="a1" value="3">416, 8 тыс. км2</label>
+	</p>
+	<label for="b1">Республика Коми расположена:</label><br>
+	<select name="b1" id="select1">
+		<option value="0"></option>
+		<option value="1">на стыке двух частей света – Европы и Азии</option>
+		<option value="2">на северо – западе европейской части России</option>
+		<option value="3">на юго – востоке Русской равнины</option>
+	</select>
+  	<p>Территория РК омывается:<br>
+		<label><input class="w3-radio" type="radio" name="a2" value="1">водами морей Атлантического океана</label>
+		<label><input class="w3-radio" type="radio" name="a2" value="2">водами морей Северного Ледовитого океана</label>
+		<label><input class="w3-radio" type="radio" name="a2" value="3">не имеет выхода к морям</label>
+	</p>
+	<p>Республика Коми простирается:<br>
+		<label><input class="w3-radio" type="radio" name="a3" value="1">на пяти параллелях</label>
+		<label><input class="w3-radio" type="radio" name="a3" value="2">на семи параллелях</label>
+		<label><input class="w3-radio" type="radio" name="a3" value="3">на девяти параллелях</label>
+	</p>
+	<label for="b2">Республика Коми расположена в пределах:</label><br>
+	<select name="b2" id="select2">
+		<option value="0"></option>
+		<option value="1">Восточно – Сибирского плоскогорья</option>
+		<option value="2">Восточно – Европейской равнины и западных склонов Уральских гор</option>
+		<option value="3">Западно – Сибирской равнины и восточных склонов Уральских гор</option>
+	</select>
+	<p>
+		<input type="button" class="w3-button w3-mobile w3-green w3-round" id="calc" value="Проверить">
+		<input type="reset" class="w3-button w3-mobile w3-green w3-round" value="Сброс">
+	</p>	
+	</form>
+</div>
+
+<div id="Otv" class="w3-modal">
+	<div style="background-color:rgba(173,196,231,1.00)" class="w3-modal-content w3-animate-zoom">
+		<header class="w3-container w3-green"> 
+			<span onclick="document.getElementById('Otv').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+			<h2>Результаты тестирования</h2>
+      	</header>
+		<div class="w3-container">
+			<p>Правильных ответов: <input type="text" id="result1" name="result1" readonly></p>
+			<p>Процент правильных ответов: <input type="text" name="result2" id="result2" readonly></p>
+			<p>Оценка: <input type="text" name="result2" id="result3" readonly></p>
+      </div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	calc.onclick = function(){
+		var myform = this.form,
+		c1 = myform['b1'],
+		c2 = myform['b2'],
+		i = 0,
+		sum = 0;
+		
+		if(myform.a1.value == '3') sum++;
+		if(myform.a2.value == '3') sum++;
+		if(myform.a3.value == '3') sum++;
+		if(myform.b1.value == '1') sum++;
+		if(myform.b2.value == '2') sum++;
+		
+		document.getElementById('result1').value = sum;
+		document.getElementById('result2').value = (sum/5)*100+'%';
+		i = (sum/5)*100;
+		if (i<=60) document.getElementById('result3').value = 2;
+		if (i>=61 && i<=74) document.getElementById('result3').value = 3;
+		if (i>=75 && i<=89) document.getElementById('result3').value = 4;
+		if (i>=90) document.getElementById('result3').value = 5;
+		document.getElementById('Otv').style.display='block';
+	}; 
+</script>	
+</body>
+</html>
