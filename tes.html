@@ -4,22 +4,72 @@
 <meta charset="utf-8">
 <title>Урок обобщения и контроля знаний</title>
 <script src="js/MyScripts.js"></script>
-<link href="css/w3.css" rel="stylesheet" type="text/css" media="screen">
+<script src="js/MyKrosvord.js"></script>
+<link href="css/Krosvord.css" rel="stylesheet" type="text/css" media="screen">
 <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/w3.css" rel="stylesheet" type="text/css" media="screen">
 </head>
-
 <body background="img/fon1.png">
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
-  <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-bars"></i></a>
+  <a href="#" onClick="PrevSprav(1,'index.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-bars"></i></a>
   <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
-</div>
+  <a href="#" onClick="NextSprav(1,'#','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
+ </div>
 </div>
 <div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2>Урок обобщения и контроля знаний</h2></div>
-<div class="YrokGlavPole">
-Тесты, ребусы, кроссворды
+<div class="YrokGlavPole" id="0" style="display:block">
+	<div id="waitmessage" class="ecw-answerbox">
+	</div>
+	<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td class="ecw-crosswordarea">
+			<script src="js/Krosvord.js"></script>
+		</td>
+		<td valign="top" style="padding-left: 1em;">
+			<div id="welcomemessage" class="ecw-answerbox" style="display:none;">
+				<h3>Привет!</h3>
+				<p>Нажмите слово в головоломке, чтобы начать.</p>
+			</div>
+			<div id="answerbox" class="ecw-answerbox" style="display:none;">
+				<h3 id="wordlabel" class="ecw-wordlabel">&nbsp;</h3>
+				<div id="wordinfo" class="ecw-wordinfo"> </div>
+				<div id="wordclue" class="ecw-cluebox"> </div>
+				<div style="margin-top: 1em;">
+					<input class="ecw-input" id="wordentry" type="text" size="24" style="font-weight: bold; text-transform:uppercase;" onkeypress="WordEntryKeyPress(event)" onchange="WordEntryKeyPress(event)" />
+				</div>
+				<div id="worderror" class="ecw-worderror"></div>
+				<table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top:1em;">
+					<tbody>
+						<tr>
+							<td>
+								<button id="cheatbutton" type="button" class="w3-button w3-mobile w3-green w3-round" onclick="CheatClick();">Подсказка</button>
+							</td>
+							<td align="right">
+								<button id="okbutton" type="button" class=" w3-button w3-mobile w3-green w3-round" onclick="OKClick();">Ок</button> &nbsp;
+								<button id="cancelbutton" type="button" class=" w3-button w3-mobile w3-green w3-round" onclick="DeselectCurrentWord();">Отмена</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div style="margin-top: 1em;">
+				<button class="w3-button w3-mobile w3-green w3-round" id="checkbutton" type="button" onclick="CheckClick();" style="display: none;">Проверить решение</button>
+			</div>
+			<div id="congratulations" class="ecw-answerbox" style="display:none;">
+				<h3>Поздравляем! Все решено верно.</h3>
+			</div>
+		</td>
+	</tr>
+	</table>
+	<script type="text/javascript">
+		BeginCrossword();
+	</script>
+</div>
+
+<div class="YrokGlavPole" id="1" style="display:none">
+123
 </div>
 </body>
 </html>

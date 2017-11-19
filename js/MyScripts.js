@@ -1,17 +1,17 @@
 // JavaScript Document
-		var i=0;
+		var it=0;
 		function SlideSprav(col,styl)
 		{"use strict";
 		 	for (var k=0; k<=col; k++) {
-  			if (k===i) {document.getElementById(String(k)).style.display=String(styl);}
+  			if (k===it) {document.getElementById(String(k)).style.display=String(styl);}
 				else {document.getElementById(String(k)).style.display="none";}
 			}
 		}	
 		
 		function PrevSprav(col,link,styl)
 		{"use strict";
-			if (i>0)
-			{--i;
+			if (it>0)
+			{--it;
 			 SlideSprav(col,styl);
 			}
 		 else {location.href=link;}
@@ -19,8 +19,8 @@
 		
 		function NextSprav(col,link,styl)
 		{"use strict";
-		 if (i<col)
-			{++i;
+		 if (it<col)
+			{++it;
 			 SlideSprav(col,styl);
 			}
 		 else {location.href=link;}
