@@ -57,7 +57,7 @@
 	</form>
 </div>
 
-<div id="Otv" class="w3-modal" onclick="this.style.display='none'">
+<div id="Otv" class="w3-modal">
 	<div style="background-color:rgba(173,196,231,1.00)" class="w3-modal-content w3-animate-zoom">
 		<header class="w3-container w3-green"> 
 			<span onclick="document.getElementById('Otv').style.display='none'" class="w3-button w3-display-topright">&times;</span>
@@ -76,6 +76,7 @@
 		var myform = this.form,
 		c1 = myform['b1'],
 		c2 = myform['b2'],
+		i = 0,
 		sum = 0;
 		
 		if(myform.a1.value == '2') sum++;
@@ -86,8 +87,11 @@
 
 		document.getElementById('result1').value = sum;
 		document.getElementById('result2').value = (sum/5)*100+'%';
-		if (sum<=2) document.getElementById('result3').value = 2;
-		if (sum>2) document.getElementById('result3').value = sum;
+		i = (sum/5)*100;
+		if (i<=60) document.getElementById('result3').value = 2;
+		if (i>=61 && i<=74) document.getElementById('result3').value = 3;
+		if (i>=75 && i<=89) document.getElementById('result3').value = 4;
+		if (i>=90) document.getElementById('result3').value = 5;
 		document.getElementById('Otv').style.display='block';
 	}; 
 </script>	
