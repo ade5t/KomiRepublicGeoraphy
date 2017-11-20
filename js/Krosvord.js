@@ -218,7 +218,7 @@
 				document.getElementById("wordinfo").innerHTML = ((CurrentWord <= LastHorizontalWord) ? "Через, " : "Перед, ") + WordLength[CurrentWord] + " букв.";
 				document.getElementById("wordclue").innerHTML = Clue[CurrentWord];
 				document.getElementById("worderror").style.display = "none";
-				document.getElementById("cheatbutton").style.display = (Word.length == 0) ? "none" : "";
+				//document.getElementById("cheatbutton").style.display = (Word.length == 0) ? "none" : "";
 				if (TheirWordLength == WordLength[CurrentWord])
 					document.getElementById("wordentry").value = TheirWord.replace(/&AMP;/g, '&');
 				else
