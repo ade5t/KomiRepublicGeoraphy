@@ -450,3 +450,38 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 	opacity: .9;
 	border-radius: 7px;
 }
+.preload
+{
+	display: block;
+	position: fixed;
+	z-index: 99997;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color:#4CAF50;
+	font-size: 500%;
+}
+.preload1
+{
+	transition: opacity .2s ease;
+	opacity: 0;
+	display: block;
+	z-index: 99997;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color:#4CAF50;
+	font-size: 500%;
+}
+.spinn
+{
+	z-index: 99999;  
+	position: fixed;
+	top: 45%;
+	left: 48%;
+}
