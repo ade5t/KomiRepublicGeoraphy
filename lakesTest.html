@@ -6,20 +6,8 @@
 <link href="css/w3.css" rel="stylesheet" type="text/css" media="screen">
 <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
-<body background="img/fon1.png">
-	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div>
-	<script>
-	var preload=document.getElementById('prel');
-	animation = function() {
-				preload.style.display="none";
-				preload.style.zIndex=0;	
-			}
-	window.onload = function() 
-	{
-		preload.className = preload.className.replace("preload", "preload1");
-		setTimeout(animation, 200);
-	};
-	</script>
+<body background="img/fon1.png" onload = "OffPrell()">
+	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div> 
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
   <a href="#" onClick="PrevSprav(0,'lakesPrac.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
@@ -29,31 +17,31 @@
 </div>
 </div>
 <div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2 class="zagol2">Внутренние воды Республики Коми. Климат</h2></div>
-<div  align="center" class="YrokGlavPole" id="0" style="display:block">
+<div  align="left" class="YrokGlavPole" id="0" style="display:block">
 	<form class="w3-container abz">
 	<p>Какой тип климата на большей части республики?<br>
-		<label><input class="w3-radio" type="radio" name="a1" value="1">субарктический</label>
-		<label><input class="w3-radio" type="radio" name="a1" value="2">умеренно-континентальный</label>
-		<label><input class="w3-radio" type="radio" name="a1" value="3">реко-континентальный</label>
+		<label><input class="w3-radio" type="radio" name="a1" value="1">субарктический</label><br>
+		<label><input class="w3-radio" type="radio" name="a1" value="2">умеренно-континентальный</label><br>
+		<label><input class="w3-radio" type="radio" name="a1" value="3">реко-континентальный</label><br>
 	</p>
   	<p>В каком климатическом поясе находится г.Воркута? <br>
-		<label><input class="w3-radio" type="radio" name="a2" value="1">субарктический</label>
-		<label><input class="w3-radio" type="radio" name="a2" value="2">умеренный</label>
+		<label><input class="w3-radio" type="radio" name="a2" value="1">субарктический</label><br>
+		<label><input class="w3-radio" type="radio" name="a2" value="2">умеренный</label><br>
 	</p>
 	<p>Самая длинная река РК?<br>
-		<label><input class="w3-radio" type="radio" name="a3" value="1">Мезень</label>
-		<label><input class="w3-radio" type="radio" name="a3" value="2">Вычегда</label>
-		<label><input class="w3-radio" type="radio" name="a3" value="3">Печора</label>
+		<label><input class="w3-radio" type="radio" name="a3" value="1">Мезень</label><br>
+		<label><input class="w3-radio" type="radio" name="a3" value="2">Вычегда</label><br>
+		<label><input class="w3-radio" type="radio" name="a3" value="3">Печора</label><br>
 	</p>
 	<p>На какой реке расположен г.Сыктывкар?<br>
-		<label><input class="w3-check" type="checkbox" name="f" value="1">Печора</label>
-		<label><input class="w3-check" type="checkbox" name="f" value="2">Вычегда</label>
-		<label><input class="w3-check" type="checkbox" name="f" value="3">Сысола</label>
+		<label><input class="w3-check" type="checkbox" name="f" value="1">Печора</label><br>
+		<label><input class="w3-check" type="checkbox" name="f" value="2">Вычегда</label><br>
+		<label><input class="w3-check" type="checkbox" name="f" value="3">Сысола</label><br>
   	</p>
 	<p>Назовите приток реки Северная Двина, протекающий на территории РК<br>
-		<label><input class="w3-radio" type="radio" name="a4" value="1">Луза</label>
-		<label><input class="w3-radio" type="radio" name="a4" value="2">Вычегда</label>
-		<label><input class="w3-radio" type="radio" name="a4" value="3">Летка</label>
+		<label><input class="w3-radio" type="radio" name="a4" value="1">Луза</label><br>
+		<label><input class="w3-radio" type="radio" name="a4" value="2">Вычегда</label><br>
+		<label><input class="w3-radio" type="radio" name="a4" value="3">Летка</label><br>
 	</p>
 	<p>
 		<input type="button" class="w3-button w3-mobile w3-green w3-round" id="calc" value="Проверить">
@@ -79,7 +67,7 @@
 <script type="text/javascript">
 	calc.onclick = function(){
 		var myform = this.form,
-		c1 = myform['b1'],
+		c1 = myform['f'],
 		c2 = myform['b2'],
 		i = 0,
 		sum = 0;
@@ -87,7 +75,7 @@
 		if(myform.a1.value == '2') sum++;
 		if(myform.a2.value == '1') sum++;
 		if(myform.a3.value == '3') sum++;
-        if(!chbx[0].checked && chbx[1].checked && chbx[2].checked && chbx[1].value == '2' && chbx[2].value == '3') sum++;
+        if(!c1[0].checked && c1[1].checked && c1[2].checked && c1[1].value == '2' && c1[2].value == '3') sum++;
 		if(myform.a4.value == '2') sum++;
 
 		document.getElementById('result1').value = sum;

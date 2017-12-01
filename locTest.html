@@ -6,20 +6,8 @@
 <link href="css/w3.css" rel="stylesheet" type="text/css" media="screen">
 <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
-<body background="img/fon1.png">
-	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div>
-	<script>
-	var preload=document.getElementById('prel');
-	animation = function() {
-				preload.style.display="none";
-				preload.style.zIndex=0;	
-			}
-	window.onload = function() 
-	{
-		preload.className = preload.className.replace("preload", "preload1");
-		setTimeout(animation, 200);
-	};
-	</script>
+<body background="img/fon1.png" onload = "OffPrell()">
+	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div> 
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
   <a href="#" onClick="PrevSprav(0,'locPrac.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
@@ -29,32 +17,32 @@
 </div>
 </div>
 <div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2 class="zagol2">Географическое положение РК</h2></div>
-<div  align="center" class="YrokGlavPole" id="0" style="display:block">
+<div  align="left" class="YrokGlavPole" id="0" style="display:block">
 	<form class="w3-container abz">
 	<p>Площадь Республики Коми составляет:<br>
-		<label><input class="w3-radio" type="radio" name="a1" value="1">100 тыс.км2</label>
-		<label><input class="w3-radio" type="radio" name="a1" value="2">200 тыс. км2</label>
-		<label><input class="w3-radio" type="radio" name="a1" value="3">416, 8 тыс. км2</label>
+		<label><input class="w3-radio" type="radio" name="a1" value="1">100 тыс.км2</label><br>
+		<label><input class="w3-radio" type="radio" name="a1" value="2">200 тыс. км2</label><br>
+		<label><input class="w3-radio" type="radio" name="a1" value="3">416, 8 тыс. км2</label><br>
 	</p>
 	<label for="b1">Республика Коми расположена:</label><br>
-	<select name="b1" id="select1">
+	<select style="width: 50%" name="b1" id="select1">
 		<option value="0"></option>
 		<option value="1">на стыке двух частей света – Европы и Азии</option>
 		<option value="2">на северо – западе европейской части России</option>
 		<option value="3">на юго – востоке Русской равнины</option>
 	</select>
   	<p>Территория РК омывается:<br>
-		<label><input class="w3-radio" type="radio" name="a2" value="1">водами морей Атлантического океана</label>
-		<label><input class="w3-radio" type="radio" name="a2" value="2">водами морей Северного Ледовитого океана</label>
-		<label><input class="w3-radio" type="radio" name="a2" value="3">не имеет выхода к морям</label>
+		<label><input class="w3-radio" type="radio" name="a2" value="1">водами морей Атлантического океана</label><br>
+		<label><input class="w3-radio" type="radio" name="a2" value="2">водами морей Северного Ледовитого океана</label><br>
+		<label><input class="w3-radio" type="radio" name="a2" value="3">не имеет выхода к морям</label><br>
 	</p>
 	<p>Республика Коми простирается:<br>
-		<label><input class="w3-radio" type="radio" name="a3" value="1">на пяти параллелях</label>
-		<label><input class="w3-radio" type="radio" name="a3" value="2">на семи параллелях</label>
-		<label><input class="w3-radio" type="radio" name="a3" value="3">на девяти параллелях</label>
+		<label><input class="w3-radio" type="radio" name="a3" value="1">на пяти параллелях</label><br>
+		<label><input class="w3-radio" type="radio" name="a3" value="2">на семи параллелях</label><br>
+		<label><input class="w3-radio" type="radio" name="a3" value="3">на девяти параллелях</label><br>
 	</p>
 	<label for="b2">Республика Коми расположена в пределах:</label><br>
-	<select name="b2" id="select2">
+	<select style="width: 50%" name="b2" id="select2">
 		<option value="0"></option>
 		<option value="1">Восточно – Сибирского плоскогорья</option>
 		<option value="2">Восточно – Европейской равнины и западных склонов Уральских гор</option>

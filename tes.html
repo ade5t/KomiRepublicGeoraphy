@@ -11,7 +11,7 @@
 <script async src="js/Navigation.js"></script>
 <script src="js/MyKrosvord.js"></script>
 </head>
-<body background="img/fon1.png">
+<body background="img/fon1.png" onload = "OffPrell()">
 	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div>
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
@@ -71,12 +71,13 @@
 	</script>
 </div>
 
-<div align="center" class="YrokGlavPole" id="1" style="display:none">
+<div align="left" class="YrokGlavPole" id="1" style="display:none">
 	<form class="w3-container abz">
-	<div>
+	<div style="display: inline-block">
 		<p>Какой цифрой на картосхеме обозначены районы:<br>
+		<div><img src="img/test1.jpg" class="w3-round" width="15%" height="16%" align="right" title="" style="cursor:zoom-in" onclick="document.getElementById('t1FULL').style.display='block'"/></div>
 			<label for="b0">Сосногорский – </label>
-				<select name="b0" id="select0">
+				<select style="width: 10%" name="b0" id="select0">
 				<option value="0"></option>
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -98,9 +99,9 @@
 				<option value="18">18</option>
 				<option value="19">19</option>
 				<option value="20">20</option>
-				</select>
+				</select><br>
 			<label for="b1">Удорский – </label>
-				<select name="b1" id="select1">
+				<select style="width: 10%" name="b1" id="select1">
 				<option value="0"></option>
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -122,9 +123,9 @@
 				<option value="18">18</option>
 				<option value="19">19</option>
 				<option value="20">20</option>
-				</select>
+				</select><br>
 			<label for="b2">Троицко-Печорский – </label>
-				<select name="b2" id="select2">
+				<select style="width: 10%" name="b2" id="select2">
 				<option value="0"></option>
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -146,9 +147,9 @@
 				<option value="18">18</option>
 				<option value="19">19</option>
 				<option value="20">20</option>
-				</select>
+				</select><br>
 			<label for="b3">Печорскокий –</label>
-				<select name="b3" id="select3">
+				<select style="width: 10%" name="b3" id="select3">
 				<option value="0"></option>
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -172,25 +173,24 @@
 				<option value="20">20</option>
 				</select><br>
 		</p>
-		<div><img src="img/test1.jpg" class="w3-round" width="8%" height="11%" align="" title="" style="cursor:zoom-in" onclick="document.getElementById('t1FULL').style.display='block'"/></div>
  	</div>
   	<p>Найти соответствие: район – районный центр:<br>
 			<label for="b4">Прилузский – </label>
-				<select name="b4" id="select4">
+				<select style="width: 20%" name="b4" id="select4">
 				<option value="0"></option>
 				<option value="1">с. Визинга</option>
 				<option value="2">с. Выльгорт</option>
 				<option value="3">с. Объячево</option>
-				</select>
+				</select><br>
 			<label for="b5">Сысольский – </label>
-				<select name="b5" id="select5">
+				<select style="width: 20%" name="b5" id="select5">
 				<option value="0"></option>
 				<option value="1">с. Визинга</option>
 				<option value="2">с. Выльгорт</option>
 				<option value="3">с. Объячево</option>
-				</select>
+				</select><br>
 			<label for="b6">Сыктывдинский – </label>
-				<select name="b6" id="select6">
+				<select style="width: 20%" name="b6" id="select6">
 				<option value="0"></option>
 				<option value="1">с. Визинга</option>
 				<option value="2">с. Выльгорт</option>
@@ -198,13 +198,13 @@
 				</select><br>
 	</p>
 	<p>Ведущий межотраслевой комплекс  Республики Коми:<br>
-		<label><input class="w3-radio" type="radio" name="a3" value="1">агропромышленный</label>
-		<label><input class="w3-radio" type="radio" name="a3" value="2">транспортный</label>
-		<label><input class="w3-radio" type="radio" name="a3" value="3">топливно - энергетический</label>
+		<label><input class="w3-radio" type="radio" name="a3" value="1">агропромышленный</label><br>
+		<label><input class="w3-radio" type="radio" name="a3" value="2">транспортный</label><br>
+		<label><input class="w3-radio" type="radio" name="a3" value="3">топливно - энергетический</label><br>
 	</p>
 	<p>Найти соответствие: подрайон – специализация:<br>
 			<label for="b7">Ухта – Печорский – </label>
-				<select name="b7" id="select7">
+				<select style="width: 50%" name="b7" id="select7">
 				<option value="0"></option>
 				<option value="1">район угольной промышленности, овощеводства на закрытом грунте, оленеводства</option>
 				<option value="2">район лесоразработок и развитого сельского хозяйства</option>
@@ -218,7 +218,7 @@
 				<option value="3">район нефтяной, газовой и лесной промышленности</option>
 				</select><br>
 			<label for="b9">Вычегодско - Мезенский – </label>
-				<select name="b9" id="select9">
+				<select style="width: 50%" name="b9" id="select9">
 				<option value="0"></option>
 				<option value="1">район угольной промышленности, овощеводства на закрытом грунте, оленеводства</option>
 				<option value="2">район лесоразработок и развитого сельского хозяйства</option>
@@ -227,13 +227,13 @@
 	</p>
   	<p>Вставить информацию:<br>
   			ОАО «Воркутауголь» состоит из <label for="b10"></label>
-				<select name="b10" id="select10">
+				<select style="width: 10%" name="b10" id="select10">
 				<option value="0"></option>
 				<option value="1">семи</option>
 				<option value="2">пяти</option>
 				<option value="3">трех</option>
 				</select> подземных шахт и одного разреза, входит в горнодобывающий дивизион ОАО «<label for="b11"></label>
-				<select name="b11" id="select11">
+				<select style="width: 10%" name="b11" id="select11">
 				<option value="0"></option>
 				<option value="1">Россталь</option>
 				<option value="2">Северсталь</option>
@@ -241,67 +241,67 @@
 			<br>
 	</p>
 	<p>Основным потребителем угля из РК является область:<br>
-		<label><input class="w3-radio" type="radio" name="a4" value="1">Архангельская</label>
-		<label><input class="w3-radio" type="radio" name="a4" value="2">Вологодская</label>
-		<label><input class="w3-radio" type="radio" name="a4" value="3">Кировская</label>
+		<label><input class="w3-radio" type="radio" name="a4" value="1">Архангельская</label><br>
+		<label><input class="w3-radio" type="radio" name="a4" value="2">Вологодская</label><br>
+		<label><input class="w3-radio" type="radio" name="a4" value="3">Кировская</label><br>
 	</p>
 	<p>Предприятия компаний ООО «ЛУКОЙЛ-Коми», ООО «Енисей» осуществляют добычу и переработку:<br>
-		<label><input class="w3-radio" type="radio" name="a5" value="1">природного газа</label>
-		<label><input class="w3-radio" type="radio" name="a5" value="2">нефти</label>
-		<label><input class="w3-radio" type="radio" name="a5" value="3">бокситов</label>
+		<label><input class="w3-radio" type="radio" name="a5" value="1">природного газа</label><br>
+		<label><input class="w3-radio" type="radio" name="a5" value="2">нефти</label><br>
+		<label><input class="w3-radio" type="radio" name="a5" value="3">бокситов</label><br>
 	</p>
 	<p>Газоперерабатывающий завод построен в городе:<br>
-		<label><input class="w3-radio" type="radio" name="a6" value="1">Вуктыл</label>
-		<label><input class="w3-radio" type="radio" name="a6" value="2">Ухта</label>
-		<label><input class="w3-radio" type="radio" name="a6" value="3">Сосногорск</label>
+		<label><input class="w3-radio" type="radio" name="a6" value="1">Вуктыл</label><br>
+		<label><input class="w3-radio" type="radio" name="a6" value="2">Ухта</label><br>
+		<label><input class="w3-radio" type="radio" name="a6" value="3">Сосногорск</label><br>
 	</p>
 	<p>В общероссийском производстве бумаги и фанеры  РК занимает место:<br>
-		<label><input class="w3-radio" type="radio" name="a13" value="1">первое</label>
-		<label><input class="w3-radio" type="radio" name="a13" value="2">второе</label>
-		<label><input class="w3-radio" type="radio" name="a13" value="3">третье</label>
+		<label><input class="w3-radio" type="radio" name="a13" value="1">первое</label><br>
+		<label><input class="w3-radio" type="radio" name="a13" value="2">второе</label><br>
+		<label><input class="w3-radio" type="radio" name="a13" value="3">третье</label><br>
 	</p>
 	<p>Компания «Сыктывкар Тиссью Груп» - один из ведущих отечественных производителей:<br>
-		<label><input class="w3-radio" type="radio" name="a7" value="1">бумажных обоев</label>
-		<label><input class="w3-radio" type="radio" name="a7" value="2">санитарно-гигиенической бумаги</label>
-		<label><input class="w3-radio" type="radio" name="a7" value="3">офисной и офсетной бумаги</label>
+		<label><input class="w3-radio" type="radio" name="a7" value="1">бумажных обоев</label><br>
+		<label><input class="w3-radio" type="radio" name="a7" value="2">санитарно-гигиенической бумаги</label><br>
+		<label><input class="w3-radio" type="radio" name="a7" value="3">офисной и офсетной бумаги</label><br>
 	</p>
 	<p>Ведущей отраслью сельского хозяйства РК является:<br>
-		<label><input class="w3-radio" type="radio" name="a8" value="1">тепличное хозяйство</label>
-		<label><input class="w3-radio" type="radio" name="a8" value="2">растениеводство</label>
-		<label><input class="w3-radio" type="radio" name="a8" value="3">животноводство</label>
+		<label><input class="w3-radio" type="radio" name="a8" value="1">тепличное хозяйство</label><br>
+		<label><input class="w3-radio" type="radio" name="a8" value="2">растениеводство</label><br>
+		<label><input class="w3-radio" type="radio" name="a8" value="3">животноводство</label><br>
 	</p>
 	<p>ОАО «Пригородный» специализируется на производстве:<br>
-		<label><input class="w3-radio" type="radio" name="a9" value="1">овощей защищенного грунта</label>
-		<label><input class="w3-radio" type="radio" name="a9" value="2">молока и молочных продуктов</label>
-		<label><input class="w3-radio" type="radio" name="a9" value="3">картофеля</label>
+		<label><input class="w3-radio" type="radio" name="a9" value="1">овощей защищенного грунта</label><br>
+		<label><input class="w3-radio" type="radio" name="a9" value="2">молока и молочных продуктов</label><br>
+		<label><input class="w3-radio" type="radio" name="a9" value="3">картофеля</label><br>
 	</p>
-	<div>
+	<div style="display: inline-block">
 		<p>На картосхеме показан транспортный узел города:<br>
-			<label><input class="w3-radio" type="radio" name="a10" value="1">Ухта</label>
-			<label><input class="w3-radio" type="radio" name="a10" value="2">Печора</label>
-			<label><input class="w3-radio" type="radio" name="a10" value="3">Сыктывкар</label>
+		<div><img src="img/test2.png" class="w3-round" width="15%" height="16%" align="right" title="" style="cursor:zoom-in" onclick="document.getElementById('t2FULL').style.display='block'"/></div>
+			<label><input class="w3-radio" type="radio" name="a10" value="1">Ухта</label><br>
+			<label><input class="w3-radio" type="radio" name="a10" value="2">Печора</label><br>
+			<label><input class="w3-radio" type="radio" name="a10" value="3">Сыктывкар</label><br>
 		</p>
-			<div><img src="img/test2.png" class="w3-round" width="8%" height="11%" align="" title="" style="cursor:zoom-in" onclick="document.getElementById('t2FULL').style.display='block'"/></div>
  	</div>
  	<p>Более 70% электроэнергии в РК вырабатывается на:<br>
-		<label><input class="w3-radio" type="radio" name="a11" value="1">угле</label>
-		<label><input class="w3-radio" type="radio" name="a11" value="2">природном газе</label>
-		<label><input class="w3-radio" type="radio" name="a11" value="3">мазуте</label>
+		<label><input class="w3-radio" type="radio" name="a11" value="1">угле</label><br>
+		<label><input class="w3-radio" type="radio" name="a11" value="2">природном газе</label><br>
+		<label><input class="w3-radio" type="radio" name="a11" value="3">мазуте</label><br>
 	</p>
 	<p>Крупнейшей ГРЭС  республики является:<br>
-		<label><input class="w3-radio" type="radio" name="a12" value="1">Воркутинская</label>
-		<label><input class="w3-radio" type="radio" name="a12" value="2">Ухтинская</label>
-		<label><input class="w3-radio" type="radio" name="a12" value="3">Печорская</label>
+		<label><input class="w3-radio" type="radio" name="a12" value="1">Воркутинская</label><br>
+		<label><input class="w3-radio" type="radio" name="a12" value="2">Ухтинская</label><br>
+		<label><input class="w3-radio" type="radio" name="a12" value="3">Печорская</label><br>
 	</p>
 	<p>Железная дорога «Котлас –Ухта –Воркута» имеет 5 тупиковых ответвлений: Микунь – Вендига, 
 		<label for="b12">Микунь – </label>
-			<select name="b12" id="select12">
+			<select style="width: 20%" name="b12" id="select12">
 			<option value="0"></option>
 			<option value="1">Сыктывкар</option>
 			<option value="2">Троицко-Печорск</option>
 			</select>, 
 		<label for="b13">Ухта – </label>
-			<select name="b13" id="select13">
+			<select style="width: 20%" name="b13" id="select13">
 			<option value="0"></option>
 			<option value="1">Сыктывкар</option>
 			<option value="2">Троицко-Печорск</option>

@@ -6,20 +6,8 @@
 <link href="css/w3.css" rel="stylesheet" type="text/css" media="screen">
 <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
-<body background="img/fon1.png">
-	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div>
-	<script>
-	var preload=document.getElementById('prel');
-	animation = function() {
-				preload.style.display="none";
-				preload.style.zIndex=0;	
-			}
-	window.onload = function() 
-	{
-		preload.className = preload.className.replace("preload", "preload1");
-		setTimeout(animation, 200);
-	};
-	</script>
+<body background="img/fon1.png" onload = "OffPrell()">
+	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div> 
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
   <a href="#" onClick="PrevSprav(0,'relPrac.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
@@ -29,34 +17,34 @@
 </div>
 </div>
 <div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2 class="zagol2">Рельеф и полезные ископаемые</h2></div>
-<div  align="center" class="YrokGlavPole" id="0" style="display:block">
+<div  align="left" class="YrokGlavPole" id="0" style="display:block">
 	<form class="w3-container abz">
 	<label for="b1">Какие формы рельефа преобладают в Республики Коми</label><br>
-	<select name="b1" id="select1">
+	<select style="width: 50%" name="b1" id="select1">
 		<option value="0"></option>
 		<option value="1">равнины и возвышенности</option>
 		<option value="2">горы</option>
 		<option value="3">равнины</option>
 	</select>
   	<p>Что лежит в основе территории РК?<br>
-		<label><input class="w3-radio" type="radio" name="a1" value="1">область складчатости</label>
-		<label><input class="w3-radio" type="radio" name="a1" value="2">платорма</label>
-		<label><input class="w3-radio" type="radio" name="a1" value="3">щит</label>
+		<label><input class="w3-radio" type="radio" name="a1" value="1">область складчатости</label><br>
+		<label><input class="w3-radio" type="radio" name="a1" value="2">платорма</label><br>
+		<label><input class="w3-radio" type="radio" name="a1" value="3">щит</label><br>
 	</p>
 	<p>Самая высокая точка Урала находится:<br>
-		<label><input class="w3-radio" type="radio" name="a2" value="1">Полярный Урал</label>
-		<label><input class="w3-radio" type="radio" name="a2" value="2">Приполярный Урал</label>
-		<label><input class="w3-radio" type="radio" name="a2" value="3">Северный Урал</label>
+		<label><input class="w3-radio" type="radio" name="a2" value="1">Полярный Урал</label><br>
+		<label><input class="w3-radio" type="radio" name="a2" value="2">Приполярный Урал</label><br>
+		<label><input class="w3-radio" type="radio" name="a2" value="3">Северный Урал</label><br>
 	</p>
 	<p>В Республике Коми имеются месторождения:<br>
-		<label><input class="w3-radio" type="radio" name="a3" value="1">каменого угля, нефти, газа</label>
-		<label><input class="w3-radio" type="radio" name="a3" value="2">урановых руд, бокситов, титана</label>
-		<label><input class="w3-radio" type="radio" name="a3" value="3">никелевых руд, алмазов, золота</label>
+		<label><input class="w3-radio" type="radio" name="a3" value="1">каменого угля, нефти, газа</label><br>
+		<label><input class="w3-radio" type="radio" name="a3" value="2">урановых руд, бокситов, титана</label><br>
+		<label><input class="w3-radio" type="radio" name="a3" value="3">никелевых руд, алмазов, золота</label><br>
 	</p>
 	<p>Месторождения каких полезных ископаемых связаны с предгорным краевым прогибом?<br>
-		<label><input class="w3-radio" type="radio" name="a4" value="1">каменного угля</label>
-		<label><input class="w3-radio" type="radio" name="a4" value="2">железной руды</label>
-		<label><input class="w3-radio" type="radio" name="a4" value="3">калийных солей</label>
+		<label><input class="w3-radio" type="radio" name="a4" value="1">каменного угля</label><br>
+		<label><input class="w3-radio" type="radio" name="a4" value="2">железной руды</label><br>
+		<label><input class="w3-radio" type="radio" name="a4" value="3">калийных солей</label><br>
 	</p>
 	<p>
 		<input type="button" class="w3-button w3-mobile w3-green w3-round" id="calc" value="Проверить">

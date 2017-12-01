@@ -6,20 +6,8 @@
 <link href="css/w3.css" rel="stylesheet" type="text/css" media="screen">
 <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
-<body background="img/fon1.png">
-	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div>
-	<script>
-	var preload=document.getElementById('prel');
-	animation = function() {
-				preload.style.display="none";
-				preload.style.zIndex=0;	
-			}
-	window.onload = function() 
-	{
-		preload.className = preload.className.replace("preload", "preload1");
-		setTimeout(animation, 200);
-	};
-	</script>
+<body background="img/fon1.png" onload = "OffPrell()">
+	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div> 
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
   <a href="#" onClick="PrevSprav(0,'florPrac.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
@@ -29,34 +17,34 @@
 </div>
 </div>
 <div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2 class="zagol2">Растительный и животный мир. Почвы</h2></div>
-<div  align="center" class="YrokGlavPole" id="0" style="display:block">
+<div  align="left" class="YrokGlavPole" id="0" style="display:block">
 	<form class="w3-container abz">
 	<p>Ценная рыба, заплыающая на нерест в Печору и Мезень из СЛО:<br>
-		<label><input class="w3-radio" type="radio" name="a1" value="1">сиг</label>
-		<label><input class="w3-radio" type="radio" name="a1" value="2">семга</label>
-		<label><input class="w3-radio" type="radio" name="a1" value="3">пелядь</label>
+		<label><input class="w3-radio" type="radio" name="a1" value="1">сиг</label><br>
+		<label><input class="w3-radio" type="radio" name="a1" value="2">семга</label><br>
+		<label><input class="w3-radio" type="radio" name="a1" value="3">пелядь</label><br>
 	</p>
 	<label for="b1">Почвы тундры:</label><br>
-	<select name="b1" id="select1">
+	<select style="width: 50%" name="b1" id="select1">
 		<option value="0"></option>
 		<option value="1">тундровые глеевые, подзолистые, аллювиальные</option>
 		<option value="2">тундровые глеевые, болтные глеевые</option>
 		<option value="3">подзолистые, дерново-подзолистые</option>
 	</select><br>
   	<label for="b2">Птицы тайги:</label><br>
-	<select name="b2" id="select2">
+	<select style="width: 50%" name="b2" id="select2">
 		<option value="0"></option>
 		<option value="1">полярная сова, белая куропатка, кулики</option>
 		<option value="2">глухарь, рябчик, тетерев</option>
 		<option value="3">белая куропатка, мухоловка, кукшка</option>
 	</select>
 	<p>Растительность южной подзоны тайги:<br>
-		<label><input class="w3-radio" type="radio" name="a2" value="1">ель, сосна, береза</label>
-		<label><input class="w3-radio" type="radio" name="a2" value="2">ель, липа, осина</label>
-		<label><input class="w3-radio" type="radio" name="a2" value="3">карликовая береза, ель, осина</label>
+		<label><input class="w3-radio" type="radio" name="a2" value="1">ель, сосна, береза</label><br>
+		<label><input class="w3-radio" type="radio" name="a2" value="2">ель, липа, осина</label><br>
+		<label><input class="w3-radio" type="radio" name="a2" value="3">карликовая береза, ель, осина</label><br>
 	</p>
 	<label for="b3">Животные тундры:</label><br>
-	<select name="b3" id="select3">
+	<select style="width: 50%" name="b3" id="select3">
 		<option value="0"></option>
 		<option value="1">заяц-русак, лесная куница, рысь</option>
 		<option value="2">лемминг, белая куропатка, заяц-беляк</option>

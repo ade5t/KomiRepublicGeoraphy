@@ -6,20 +6,8 @@
 <link href="css/w3.css" rel="stylesheet" type="text/css" media="screen">
 <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
-<body background="img/fon1.png">
-	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div>
-	<script>
-	var preload=document.getElementById('prel');
-	animation = function() {
-				preload.style.display="none";
-				preload.style.zIndex=0;	
-			}
-	window.onload = function() 
-	{
-		preload.className = preload.className.replace("preload", "preload1");
-		setTimeout(animation, 200);
-	};
-	</script>
+<body background="img/fon1.png" onload = "OffPrell()">
+	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div> 
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
   <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
@@ -46,4 +34,5 @@
   </div>
 </div>
 </body>
+<script async src="js/Multimedia.js"></script>
 </html>
