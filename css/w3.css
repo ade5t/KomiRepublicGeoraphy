@@ -418,6 +418,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 	margin-top: 1%;
 }
 .abz {
+	font-family: Times, "Times New Roman", Cambria, "Hoefler Text", "Liberation Serif",  "serif";
 	font-size:15pt;
 	text-indent: 1.5em;
 	margin-bottom: 1%;

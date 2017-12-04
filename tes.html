@@ -15,63 +15,14 @@
 	<div class="preload w3-modal" id="prel"><i class="fa fa-spinner w3-spin spinn"></i></div>
 <div class="w3-dark-grey w3-border navigate">
  <div align="center" class="w3-dark-grey w3-border navigate2">
-  <a href="#" onClick="PrevSprav(1,'index.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
+  <a href="#" onClick="PrevSprav(0,'index.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-left"></i></a>
   <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-bars"></i></a>
   <a href="index.html" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
-  <a href="#" onClick="NextSprav(1,'index.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
+  <a href="#" onClick="NextSprav(0,'index.html','block')" class="w3-bar-item w3-button w3-green"><i class="fa fa-arrow-right"></i></a>
  </div>
 </div>
 <div align="center" class="w3-panel w3-green w3-round-xlarge zagolovok"><h2>Урок обобщения и контроля знаний</h2></div>
-<div class="YrokGlavPole" id="0" style="display:block">
-	<div id="waitmessage" class="ecw-answerbox">
-	</div>
-	<table cellpadding="0" cellspacing="0" border="0">
-	<tr>
-		<td class="ecw-crosswordarea">
-			<script src="js/Krosvord.js"></script>
-		</td>
-		<td valign="top" style="padding-left: 1em;">
-			<div id="welcomemessage" class="ecw-answerbox" style="display:none;">
-				<h3>Привет!</h3>
-				<p>Нажмите слово в головоломке, чтобы начать.</p>
-			</div>
-			<div id="answerbox" class="ecw-answerbox" style="display:none;">
-				<h3 id="wordlabel" class="ecw-wordlabel">&nbsp;</h3>
-				<div id="wordinfo" class="ecw-wordinfo"> </div>
-				<div id="wordclue" class="ecw-cluebox"> </div>
-				<div style="margin-top: 1em;">
-					<input class="ecw-input" id="wordentry" type="text" size="24" style="font-weight: bold; text-transform:uppercase;" onkeypress="WordEntryKeyPress(event)" onchange="WordEntryKeyPress(event)" />
-				</div>
-				<div id="worderror" class="ecw-worderror"></div>
-				<table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top:1em;">
-					<tbody>
-						<tr>
-							<td>
-								<button id="cheatbutton" type="button" style="display: none" class="w3-button w3-mobile w3-green w3-round" onclick="CheatClick();">Подсказка</button>
-							</td>
-							<td align="right">
-								<button id="okbutton" type="button" class=" w3-button w3-mobile w3-green w3-round" onclick="OKClick();">Ок</button> &nbsp;
-								<button id="cancelbutton" type="button" class=" w3-button w3-mobile w3-green w3-round" onclick="DeselectCurrentWord();">Отмена</button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div style="margin-top: 1em;">
-				<button class="w3-button w3-mobile w3-green w3-round" id="checkbutton" type="button" onclick="CheckClick();" style="display: none;">Проверить решение</button>
-			</div>
-			<div id="congratulations" class="ecw-answerbox" style="display:none;">
-				<h3>Поздравляем! Все решено верно.</h3>
-			</div>
-		</td>
-	</tr>
-	</table>
-	<script type="text/javascript">
-		BeginCrossword();
-	</script>
-</div>
-
-<div align="left" class="YrokGlavPole" id="1" style="display:none">
+<div align="left" class="YrokGlavPole" id="0" style="display:block;">
 	<form class="w3-container abz">
 	<div style="display: inline-block">
 		<p>Какой цифрой на картосхеме обозначены районы:<br>
