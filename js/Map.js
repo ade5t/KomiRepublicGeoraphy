@@ -9,7 +9,7 @@ var pp=document.getElementById('p3');
 		pwe.innerHTML = String(name);
 		pa.innerHTML = String(center);
 		pp.innerHTML = String(people);
-		im.src = im.src.replace("img/1.jpg", link);
+		im.src = im.src.replace("img/loading.jpg", link);
 		im.style.display = mystyle;
 		k.style.left = event.pageX + 0.05*event.pageX + 'px';
 		k.style.top = event.pageY + 0.05*event.pageX + 'px';
@@ -21,7 +21,7 @@ var pp=document.getElementById('p3');
 		pwe.innerHTML = '';
 		pa.innerHTML = '';
 		pp.innerHTML = '';
-		im.src = im.src.replace(im.src, "img/1.jpg");
+		im.src = im.src.replace(im.src, "img/loading.jpg");
 		im.style.display = 'none';
 	}
 }	
